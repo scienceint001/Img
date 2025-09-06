@@ -1,0 +1,30 @@
+{
+  "title": "Image Integrity Notes Feed",
+  "items": [
+    {
+      "slug": "example-figure-duplication",
+      "title": "Potential Duplication in Figure 3B",
+      "journal": "Example Journal",
+      "year": 2024,
+      "doi": "10.0000/example.doi",
+      "doi_url": "https://doi.org/10.0000/example.doi",
+      "image": "images/example_figure.jpg",
+      "teaser": "Brief analysis suggests two panels may share identical regions.",
+      "analysis_html": "<h3>Analysis</h3><p>We compared the left and right panels of Figure 3B. After contrast normalization and rotation, several microfeatures appear identical, suggesting reuse. See overlays in the supplementary link.</p><ul><li>Similarity score (NCC): ~0.94</li><li>Rotation alignment: 180\u00b0</li></ul><p><strong>Note:</strong> This post documents observations; readers should also examine the raw data.</p>",
+      "links": [
+        {
+          "label": "Paper (publisher)",
+          "url": "https://doi.org/10.0000/example.doi"
+        },
+        {
+          "label": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/"
+        },
+        {
+          "label": "Supplementary overlay",
+          "url": "#"
+        }
+      ]
+    }
+  ]
+}

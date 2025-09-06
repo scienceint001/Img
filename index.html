@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Defend Real Science</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <meta name="description" content="Community review of figures from publications: images, analyses, and discussion." />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Defend Real Science</h1>
+    <nav>
+      <a href="./">Home</a>
+      <a href="about.html">About</a>
+      <a href="submit.html">Submit</a>
+      <a href="feed.json">Feed</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <p>Explore community analyses of images from scientific publications. Click a card to read details and join the discussion.</p>
+    </section>
+
+    <section id="grid" class="grid"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built with GitHub Pages. Comments powered by <a href="https://giscus.app">giscus</a>.</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+  <script>
+    // Load posts and render cards
+    loadPosts('./posts/posts.json').then(posts => {
+      const grid = document.getElementById('grid');
+      posts.forEach(p => grid.appendChild(postCard(p)));
+    });
+  </script>
+</body>
+</html>

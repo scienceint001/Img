@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title id="page-title">Post</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+  <meta name="description" content="Detailed image analysis and discussion." />
+</head>
+<body>
+  <header class="site-header">
+    <h1><a href="../">Image Integrity Notes</a></h1>
+    <nav>
+      <a href="../">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../submit.html">Submit</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article class="post">
+      <h2 id="title"></h2>
+      <p class="meta"><span id="journal"></span> • <span id="year"></span> • <a id="doi" target="_blank" rel="noopener">DOI</a></p>
+      <img id="figure" class="figure" alt="Figure image" />
+      <div id="analysis" class="analysis"></div>
+      <div id="links" class="links"></div>
+    </article>
+
+    <section class="comments">
+      <h3>Comments</h3>
+      <!-- Replace data-* placeholders with your repo info (instructions in README) -->
+      <script src="https://giscus.app/client.js"
+        data-repo="KalluriLab/Img"
+        data-repo-id="R_kgDOPqKF8Q"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOPqKF8c4Cu_YL"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+      <noscript>Please enable JavaScript to view the comments.</noscript>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built with GitHub Pages. Comments powered by <a href="https://giscus.app">giscus</a>.</p>
+  </footer>
+
+  <script src="../assets/post.js"></script>
+</body>
+</html>
